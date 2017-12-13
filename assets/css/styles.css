@@ -1,0 +1,38 @@
+.wrapper{
+
+}
+
+header{
+    background-color: #dcdcdc;
+
+}
+
+
+nav{
+    background-color: #ffff00;
+
+}
+
+
+main{
+    background-color: #adff2f;
+
+}
+
+aside {
+    background-color: #008000;
+
+}
+
+
+footer {
+    background-color: #dcdcdc;
+}
+
+
+/* ab hier für desctop */
+@media screen and (min-width: 768px) {
+   
+}
+
+
