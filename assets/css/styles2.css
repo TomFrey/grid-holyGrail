@@ -1,0 +1,56 @@
+/* holy grail layout mit Verwendung von grid-area */
+
+.wrapper{
+    display: grid;
+    grid-template:
+            [row1] "Header Header Header"               100px
+            [row2] "Main Main Main"                     20%
+            [row3] "Aside Aside Aside"                  60%
+            [row4] "Navigation Navigation Navigation"   20%
+            [row5] "Footer Footer Footer"               100px
+            / 20% 60% 20%;
+    grid-gap: 10px 20px;
+    margin: 0 auto;
+}
+
+header{
+    background-color: #dcdcdc;
+    grid-area: Header;
+}
+
+nav{
+    background-color: #ffff00;
+    grid-area: Navigation;
+}
+
+main{
+    background-color: #adff2f;
+    grid-area: Main;
+}
+
+aside {
+    background-color: #008000;
+    grid-area: Aside;
+}
+
+footer {
+    background-color: #dcdcdc;
+    grid-area: Footer;
+}
+
+
+/* ab hier für desctop */
+@media screen and (min-width: 768px) {
+
+    .wrapper{
+        grid-template:
+                [row1] "Header Header Header"   100px
+                [row2] "Navigation Main Aside"  20%
+                [row3] "Navigation Main Aside"  60%
+                [row4] "Navigation Main Aside"  20%
+                [row5] "Footer Footer Footer"   100px
+                / 20% 60% 20%;
+    }
+}
+
+
